@@ -1,0 +1,275 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  background-color: hsl(185, 41%, 84%);
+  font-family: 'Space Mono', monospace;
+  font-size:24px;
+}
+
+/* fonts */
+.info-text{
+  color:hsl(184, 14%, 56%);
+  font-size:15px;
+}
+
+.tip-text{
+  color:hsl(0, 0%, 100%);
+}
+
+.tip-amount{
+  float:right;
+  font-size:25px;
+  color:hsl(172, 67%, 45%);
+}
+
+.per-person{
+  color:hsl(186, 14%, 43%);
+  font-size:10px;
+}
+
+#fe-mentor{
+  padding-top:10px;
+  font-size: 15px;
+}
+
+p.tip-amount{
+  font-size:30px;
+  font-weight: 700;
+}
+
+/* Centering logo image */
+#logo{
+  display:block;
+  margin:0 auto;
+  padding:25px 0;
+}
+
+/* Styling divs */
+.main-container{
+  background-color:hsl(0, 0%, 100%);
+  border-radius:10px;
+  padding: 20px 0 10px 0;
+}
+
+.div-section{
+  width:90%;
+  display:block;
+  margin:0 auto;
+  padding:10px 0;
+}
+
+#summary-box{
+  width:90%;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 10px;
+  margin-bottom:20px;
+}
+
+.summary-text{
+  padding:10px 0;
+  width:90%;
+  display: block;
+  margin:0 auto;
+}
+
+.summary-left{
+  display:inline-block;
+}
+
+.summary-right{
+  display:inline-block;
+  float:right;
+}
+
+/* buttons and inputs */
+#billForm-custom{
+  position:relative;
+  bottom:68px;
+}
+
+#reset-btn{
+  font-family:'Space Mono', monospace;
+  display:block;
+  margin:0 auto;
+  width:90%;
+  font-weight: 700;
+  background-color:#2dad95; /* Same color for the btns */
+  font-size:20px;
+  text-transform: uppercase;
+  border:none;
+  border-radius:5px;
+  padding:5px 0;
+  margin-bottom:20px;
+  margin-top:10px;
+}
+
+#reset-btn:hover{
+  background:hsl(172, 67%, 45%);
+  color:hsl(183, 100%, 15%);
+}
+
+.input-box{
+  width:92%;
+  padding:5px 0;
+  border:none;
+  border-radius:5px;
+  background:#ddebed;
+  font-family:'Space Mono', monospace;
+  font-size:20px;
+  font-weight: 700;
+  color:hsl(183, 100%, 15%);
+  text-align:right;
+}
+
+/* Get rid of scroll button for number input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-box::placeholder{
+  padding-right:5px;
+}
+
+.input-box:focus{
+  outline: 1px solid hsl(172, 67%, 45%);
+}
+
+/* make placeholder disappear when clicked */
+.input-box:focus::placeholder{
+  color:transparent;
+}
+
+#dollar-icon{
+  background: url(images/icon-dollar.svg) left no-repeat;
+  padding:10px 0 10px 30px;
+  background-position-x:8px;
+}
+
+#people-icon{
+  background: url(images/icon-person.svg) left no-repeat;
+  padding:10px 0 10px 30px;
+  background-position-x:8px;
+  margin-bottom:10px;
+}
+
+.tip-btn:hover{
+  background-color:hsl(172, 67%, 45%);
+  color:hsl(183, 100%, 15%);
+}
+
+.tip-btn{
+  font-family:'Space Mono', monospace;
+  font-weight: 700;
+  margin:8px auto;
+  width:46%;
+  padding:10px 0;
+  font-size:25px;
+  background:hsl(183, 100%, 15%);
+  color:hsl(0, 0%, 100%);
+  border-radius: 10px;
+  border:none;
+}
+
+.space-btn{
+  float:right;
+}
+
+#custom-btn{
+  color:hsl(186, 14%, 43%);
+  background-color:hsl(189, 41%, 97%);
+}
+
+#custom-btn::placeholder{
+  text-align:center;
+}
+
+/* Error input */
+.p-hidden{
+  display:none;
+}
+.error-input{
+  outline: 1px solid red;
+}
+
+.error-input:focus{
+  outline: 1px solid red;
+}
+
+.p-error{
+  width:100%;
+  font-size:14px;
+  text-align:right;
+  padding: 0 5px 5px 0;
+  color:red;
+}
+
+.hidden-item{
+  width:100%;
+  display:flex;
+}
+
+.attribution{
+  width:80%;
+  margin:0 auto;
+  margin-bottom:10px;
+}
+
+/* Will change query as my laptop has a smaller screen */
+@media only screen and (min-width:1000px) {
+  .main-container{
+    width:80%;
+    margin:0 auto;
+    display:flex;
+    flex-direction: row;
+    border-radius:20px;
+  }
+
+  .float-left{
+    width:45%;
+    padding:10px 0;
+    margin:0 auto;
+  }
+
+  .float-right{
+    width:45%;
+    padding:10px 0;
+    margin:0 auto;
+  }
+
+  #summary-box{
+    height:85%;
+    margin-top:15px;
+  }
+
+  .summary-text{
+    margin-top:10px;
+  }
+
+  #reset-btn{
+    position: relative;
+    top:40%;
+  }
+
+  p.tip-amount{
+    font-size:40px;
+  }
+
+  .space-btn{
+    float:none;
+  }
+
+  .tip-btn{
+    width:29%;
+  }
+
+  #custom-btn{
+    float:right;
+    position:relative;
+    right:22px;
+  }
+}

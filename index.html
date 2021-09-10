@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+  </head>
+  <body>
+    <div id="logo-header">
+      <img id="logo" src="images/logo.svg" alt="">
+    </div>
+    <section>
+      <div class="main-container">
+
+        <div class="float-left">
+          <div class="div-section" id="bill">
+            <h3 class="info-text">Bill</h3>
+            <form id="billForm-bill" action="" method="post">
+              <input class="input-box" id="dollar-icon" type="number" name="billInput" value="" placeholder="0">
+            </form>
+          </div>
+
+          <div class="div-section" id="tip">
+            <h3 class="info-text">Select Tip %</h3>
+            <button class="tip-btn" type="button" name="button">5%</button>
+            <button class="tip-btn space-btn" type="button" name="button">10%</button>
+            <button class="tip-btn" type="button" name="button">15%</button>
+            <button class="tip-btn space-btn" type="button" name="button">25%</button>
+            <button class="tip-btn" type="button" name="button">50%</button>
+            <form id="billForm-custom" action="" method="post">
+              <input class="tip-btn input-box space-btn" id="custom-btn" type="text" name="customInput" value="" placeholder="Custom">
+            </form>
+          </div>
+
+          <div class="div-section" id="people">
+            <h3 class="info-text">Number of People</h3>
+            <div class="hidden-item">
+              <p class="p-hidden p-error">Can't be zero</p>
+            </div>
+            <form class="billForm-people" action="" method="post">
+              <input class="input-box" id="people-icon" type="number" name="peopleInput" value="" placeholder="0">
+            </form>
+          </div>
+        </div>
+
+        <div class="float-right">
+
+          <div class="div-section" id="summary-box">
+            <div class="summary-text">
+
+              <div class="summary-left">
+                <h4 class="info-text tip-text">Tip Amount</h4>
+                <p class="per-person">/ person</p>
+              </div>
+
+              <div class="summary-right">
+                <p class="tip-amount" id="tip-total"></p>
+              </div>
+
+            </div>
+
+            <div class="summary-text">
+
+              <div class="summary-left">
+                <h4 class="info-text tip-text">Total</h4>
+                <p class="per-person">/ person</p>
+              </div>
+
+              <div class="summary-right">
+                <p class="tip-amount" id="total-Amount"></p>
+              </div>
+
+            </div>
+            <button id="reset-btn" type="button" name="button">Reset</button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="attribution">
+        <p id="fe-mentor">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Morgan</a>.</p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
